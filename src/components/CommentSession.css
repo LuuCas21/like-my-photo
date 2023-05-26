@@ -1,0 +1,40 @@
+.comment__session {
+    width:300px;
+    height:455px;
+    border:1px solid #ccc;
+    border-left:none;
+    /*box-shadow: 0 2px 8px 3px rgba(0, 0, 0, 0.15);*/
+    display:flex;
+    align-items:baseline;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.comment__session > .user__picture {
+    width:100%;
+    height:auto;
+    border-bottom:1px solid #ccc;
+}
+
+.comment__session > .input__div {
+    width:100%;
+    height:auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.comment__session > .input__div > input {
+    outline:none;
+    border:1px solid #ccc;
+    text-indent:5px;
+    padding:8px 2px;
+    margin:25px 5px;
+}
+
+@media screen and (max-width: 640px) {
+    .comment__session {
+        border-left:1px solid #ccc;
+        border-top:none;
+    }
+  }
